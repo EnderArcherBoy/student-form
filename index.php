@@ -178,7 +178,7 @@
 
                                     // Number of records per page
                                     $records_per_page = 6;
-
+                                    
                                     // Get current page
                                     $current_page = isset($_GET['page']) ? $_GET['page'] : 1;
                                     $offset = ($current_page - 1) * $records_per_page;
@@ -238,60 +238,6 @@
                             </nav>
                         </div>
                     </div>
-
-                    <!-- Modal Form Siswa -->
-                    <div class="modal fade" id="formSiswaModal" tabindex="-1">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Form Siswa</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <form id="formSiswa" action="proses.php" method="post" class="needs-validation"
-                                        novalidate>
-                                        <div class="mb-3">
-                                            <label for="nis" class="form-label">NIS</label>
-                                            <input type="text" class="form-control" id="nis" name="nis" required>
-                                            <div class="invalid-feedback">NIS tidak boleh kosong</div>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="nama" class="form-label">Nama</label>
-                                            <input type="text" class="form-control" id="nama" name="nama" required>
-                                            <div class="invalid-feedback">Nama tidak boleh kosong</div>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="jk" class="form-label">Jenis Kelamin</label>
-                                            <select class="form-select" id="jk" name="jk" required>
-                                                <option value="">Pilih Jenis Kelamin</option>
-                                                <option value="L">Laki-laki</option>
-                                                <option value="P">Perempuan</option>
-                                            </select>
-                                            <div class="invalid-feedback">Pilih jenis kelamin</div>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="alamat" class="form-label">Alamat</label>
-                                            <textarea class="form-control" id="alamat" name="alamat" rows="3"
-                                                required></textarea>
-                                            <div class="invalid-feedback">Alamat tidak boleh kosong</div>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="telepon" class="form-label">Telepon</label>
-                                            <input type="text" class="form-control" id="telepon" name="telepon"
-                                                required>
-                                            <div class="invalid-feedback">Telepon tidak boleh kosong</div>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                    <button type="submit" form="formSiswa" class="btn btn-primary">Save</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <script src="js/bootstrap.bundle.min.js"></script>
                     <script>
                         // Form validation
